@@ -13,6 +13,12 @@ formEl.addEventListener('submit', (event) => {
     age: ageEl.value,
     email: emailEl.value,
   };
+  const dataToSend2 = {
+    name: formEl.name.value,
+    age: formEl.age.value,
+    email: formEl.email.value,
+  };
+  console.log('dataToSend2 ===', dataToSend2);
   console.log('dataToSend ===', dataToSend);
   const dataInJson = JSON.stringify(dataToSend);
   console.log('dataInJson ===', dataInJson);
